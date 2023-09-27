@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="inp1">
+    <input type="number" id="inp2">
+    <button onclick="calculator('+')">+</button>
+    <button onclick="calculator('-')">-</button>
+    <button onclick="calculator('*')">*</button>
+    <button onclick="calculator('/')">/</button>
+    <script>
+        
+        function calculator(arg)
+        {
+
+            const n1=+document.querySelector("#inp1").value
+        const n2=+document.querySelector("#inp2").value
+const b=document.getElementById("#root")
+
+           if (arg==="+") {
+            sum= n1+n2 
+            console.log(sum);
+
+           } else if(arg==="-"){
+           sub=n1-n2
+           console.log(sub);
+           }
+           else if(arg==="*")
+           {
+            mul=n1*n2
+            console.log(mul);
+           }
+        else if(arg==="/"){
+            div=n1/n2
+            console.log(div);
+        }
+        
+        
+        }
+    </script>
+    <div id="root"></div>
+</body>
+</html>

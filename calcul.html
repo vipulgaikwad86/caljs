@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap By SKILLHUB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+   
+                <div class="card">
+                    <div class="card-header">Calculator</div>
+                    <div class="card-body">
+  <input class="form-control my-2" type="number" id="inp1">
+  <input class="form-control my-2" type="number" id="inp2">
+   
+  <div id="div"></div>
+                        <div class="btn-group w-100">
+  <button id="bt1" class="btn btn-primary"  onclick="calcu('+')">+</button>
+  <button class="btn btn-secondary" onclick="calcu('-')">-</button>
+  <button class="btn btn-warning" onclick="calcu('*')">*</button>
+  <button class="btn btn-primary" onclick="calcu('/')">/</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+    </div>
+    
+    
+  
+  <script>
+    function calcu(arg)
+    {
+       let n1=+document.querySelector("#inp1").value
+       let n2=+document.querySelector("#inp2").value
+
+        if (arg==="+") {
+           let add=n1+n2
+            console.log(add);
+            let n3=document.querySelector("#div")
+            n3.innerHTML=add
+            
+        } else if (arg==="-") {
+          let  sub=n1-n2
+            console.log(sub);
+            let n4=document.querySelector("#div")
+            n4.innerHTML=sub
+        }
+        else if (arg==="*") {
+          let  mul=n1*n2
+            console.log(mul);
+            let n5=document.querySelector("#div")
+            n5.innerHTML=mul
+        }
+         else if (arg==="/") {  
+          let  div=n1/n2
+            console.log(div);
+            let n6=document.querySelector("#div")
+            n6.innerHTML=div
+        }
+        else{
+            console.log("error");
+        }
+
+// let n3=+document.querySelector("#div")
+// n3.innerHTML=arg
+
+
+}
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" ></script>
+ 
+</body>
+</html>

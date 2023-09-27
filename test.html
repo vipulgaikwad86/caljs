@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap By SKILLHUB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+<body>
+    <div class="card">
+        <div class="card-header">
+          Featured
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Salry </h5>
+          <input class="form-control my-2" type="text" id="inp1" value="Salary">
+          <input class="form-control my-2" type="number" id="inp2" value="" >
+          
+          <button onclick="sal()" class="btn btn-primary">salary is</button>
+        </div>
+      </div>
+
+    <div id="root"></div>
+<div id="root2"></div>
+
+
+
+<script>
+    function sal()
+    {
+let a=document.querySelector("#inp2")
+let c=document.querySelector("#inp1") 
+ console.log(c.value);
+ c.innerHTML=c.value
+console.log(a.value);
+let d=document.querySelector("#root")
+d.innerHTML=c.value
+let b=document.querySelector("#root2")
+b.innerHTML=a.value
+
+
+   }
+</script>
+</body>
+</html>

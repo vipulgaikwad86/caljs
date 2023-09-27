@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap By SKILLHUB</title>
+    <style>
+        .in
+        {
+            
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+<body>
+    <div id="text1"></div>
+    <div id="text2"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+                <div id="root"></div>
+                <div class="card">
+                    <div class="card-header">Income</div>
+                    <div class="card-body">
+                              <input class="form-control my-2"  id="inp1" placeholder="Salary" value="salary" >
+                        <input class="form-control my-2" type="number" id="inp2">
+                        <div class="btn-group w-100">
+                                <button class="btn btn-primary" onclick="salary()" >add income</button>                    
+                 </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+       <script>
+function salary()
+{
+   const p=document.querySelector("#inp1")
+
+const n1=+document.querySelector("#inp2").value
+console.log(p.value);
+console.log(n1);
+const x=document.querySelector("#text1")
+const y=document.querySelector("#text2")
+x.innerHTML=n1
+y.innerHTML=p.value
+
+}
+    </script>
+</body>
+</html>
